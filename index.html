@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Galeria Lightbox</title>
+		<link rel="icon" type="image/png" href="imgs/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container-fluid mr-2 ml-2">
+			<h1 class="text-center text-primary p-2">
+				Bootstrap 4: Galeria Lightbox
+			</h1>
+			<h3 class="text-center text-primary pt-0 pb-2">(Responsivo)</h3>
+			<div class="row mx-auto">
+				<div class="column">
+					<a href="imgs/img-1.jpg" data-toggle="lightbox">
+						<img src="imgs/img-1.jpg" />
+					</a>
+					<a href="imgs/img-3.jpg" data-toggle="lightbox">
+						<img src="imgs/img-3.jpg" />
+					</a>
+					<a href="imgs/img-4.jpg" data-toggle="lightbox">
+						<img src="imgs/img-4.jpg" />
+					</a>
+					<a href="imgs/img-5.jpg" data-toggle="lightbox">
+						<img src="imgs/img-5.jpg" />
+					</a>
+					<a href="imgs/img-16.jpg" data-toggle="lightbox">
+						<img src="imgs/img-16.jpg" />
+					</a>
+				</div>
+
+				<div class="column">
+					<a href="imgs/img-10.jpg" data-toggle="lightbox">
+						<img src="imgs/img-10.jpg" />
+					</a>
+					<a href="imgs/img-7.jpg" data-toggle="lightbox">
+						<img src="imgs/img-7.jpg" />
+					</a>
+					<a href="imgs/img-8.jpg" data-toggle="lightbox">
+						<img src="imgs/img-8.jpg" />
+					</a>
+					<a href="imgs/img-9.jpg" data-toggle="lightbox">
+						<img src="imgs/img-9.jpg" />
+					</a>
+					<a href="imgs/img-15.jpg" data-toggle="lightbox">
+						<img src="imgs/img-15.jpg" />
+					</a>
+				</div>
+
+				<div class="column">
+					<a href="imgs/img-6.jpg" data-toggle="lightbox">
+						<img src="imgs/img-6.jpg" />
+					</a>
+					<a href="imgs/img-13.jpg" data-toggle="lightbox">
+						<img src="imgs/img-13.jpg" />
+					</a>
+					<a href="imgs/img-12.jpg" data-toggle="lightbox">
+						<img src="imgs/img-12.jpg" />
+					</a>
+					<a href="imgs/img-11.jpg" data-toggle="lightbox">
+						<img src="imgs/img-11.jpg" />
+					</a>
+					<a href="imgs/img-14.jpg" data-toggle="lightbox">
+						<img src="imgs/img-14.jpg" />
+					</a>
+					<a href="imgs/img-17.jpg" data-toggle="lightbox">
+						<img src="imgs/img-17.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+		<script>
+			$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
+			});
+		</script>
+	</body>
+</html>
