@@ -5,4 +5,6 @@
 </div>
 <div align='center'>
 <img src='imgs/screenshot.gif'>
+<br/>
+<h4 aligh='cente'>Veja o deploy <a href='https://maraisaferreira.github.io/lightbox_gallery/'>aqui</a>.</h4>
 </div>
